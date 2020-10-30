@@ -1,0 +1,21 @@
+.contact-main {
+    background-color: $mauve;
+}
+
+.contact-main figure {
+    margin: 0;
+    float: right;
+}
+
+.contact-main article {
+    float: left;
+    padding: 20px;
+        p {
+            line-height: 1rem;
+        }
+}
+
+.contact-main .emailaddress {
+    text-transform: uppercase;
+    @include fontVals(3.2rem, 1rem, 1.3px)
+}

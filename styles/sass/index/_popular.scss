@@ -1,0 +1,22 @@
+.popular {
+    display: flex;
+    padding: 6vw 8vw 5vw;
+}
+
+.popular figure {
+    margin-right: 50px;
+    height: 100%;
+}
+
+.popular article {
+    padding: 0 50px;
+}
+.popular img {
+    // line-height: 0.01;
+    display: block;
+    height: 100%;
+}
+
+.popular h2 {
+    @include fontVals(5.2rem, 100%, 1.2px)
+}

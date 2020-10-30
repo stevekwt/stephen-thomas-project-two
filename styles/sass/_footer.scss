@@ -1,0 +1,7 @@
+footer {
+    background-color: $brownred;
+    color: $white;
+    text-align: center;
+    @include fontVals(2rem, 3.2rem);
+    padding: 5px;
+}

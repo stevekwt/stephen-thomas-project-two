@@ -1,0 +1,44 @@
+.main-links {
+    background-color: $mauve;
+    padding: 10vw 11vw 2vw;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 35px;
+}
+
+.main-links article {
+    display: flex;
+}
+
+.main-links .logo {
+    padding: 0 30px;
+}
+
+.main-links h2 {
+    @include fontVals(5.2rem, 100%, 1.6px);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-links .fas {
+    color: $white;
+    background-color: $black;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+}
+.main-links .fa-location-arrow {
+    padding: 11px 9px;
+}
+.main-links .fa-users {
+    padding: 10px 7px;
+}
+.main-links .fa-file {
+    padding: 10px 14px;
+}
+.main-links .fa-phone {
+    padding: 10px 11px;
+}

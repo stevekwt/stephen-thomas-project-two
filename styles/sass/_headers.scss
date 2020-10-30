@@ -1,0 +1,82 @@
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .logo {
+    @include fontVals(3.58rem, 3.6rem, 0.11rem);
+    width: 100px;
+    padding: 40px 0;
+}
+
+
+header.index {
+  background-image: url(../assets/header-image.jpg);
+  background-position: center;
+  min-height: 85vh;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+.top-bar nav {
+    ul {
+    list-style: none;
+        li {
+        display: inline-block;
+        padding: 2px 10px;
+        margin: 9px;
+        @include fontVals(2rem, 2.9rem, 0.1rem);
+        text-transform: uppercase;
+        color: $black;
+            a {
+            text-decoration: none;
+            color: $black;
+            }
+        }
+    }
+}
+
+nav ul li:hover {
+    background-color: $black;
+    color: $white; 
+}
+nav ul li a:hover {
+    color: $white; 
+}
+
+header.index nav ul li:first-child {
+    background-color: $black;
+    color: $white;
+}
+
+header.index h1 {
+   @include fontVals(11rem, 6.4rem);
+   width: 200px;
+}
+section.index-about {
+    padding-bottom: 12vw;
+}
+.centering {
+    text-align: center;
+}
+
+
+// HEADER STYLES SHARED BETWEEN CONTACT AND BLOG
+header.blog h1,
+header.contact h1 {
+   @include fontVals(8rem, 9.2rem);
+   text-transform: uppercase;
+}
+
+// BLOG HEADER
+header.blog {
+    background-image: url(../assets/blog-header.jpg);
+    background-position: right;
+}
+
+// CONTACT HEADER
+header.contact {
+    background-image: url(../assets/contact-image.jpg);
+    background-position: left;
+    min-height: 60vh;
+}

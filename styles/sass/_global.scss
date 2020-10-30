@@ -1,0 +1,66 @@
+
+// plum purple #4C0341
+// orange #FE6F19
+// white #FFFFFF
+// black #0D0D0D
+// brown red #882C07
+// pale mauve #FA35FF
+
+$plum: #4C0341;
+$orange: #FE6F19;
+$white: #FFFFFF;
+$black: #0D0D0D;
+$brownred: #882C07;
+$mauve: #FAE5FF;
+
+$figBorWidth: 35px;
+
+@mixin fontVals ($size, $height: 1, $spacing: 0) {
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, .logo {
+    font-family: 'Pompiere', cursive;
+}
+
+p, nav, footer, .button {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    @include fontVals(2rem, 3.2rem, 1px)
+}
+
+.button {
+    background-color: $plum;
+    display: inline-block;
+    color: $white;
+    padding: 10px 20px;
+    @include fontVals(2rem, 3.2rem, 1px);
+    text-transform: uppercase;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.narrow-wrapper {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.shadow--right {
+    box-shadow: $figBorWidth $figBorWidth $orange;
+}
+.shadow--left {
+    box-shadow: -$figBorWidth $figBorWidth $orange;
+}

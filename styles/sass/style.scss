@@ -1,0 +1,17 @@
+@import 'setup';
+@import 'global';
+@import 'headers';
+@import 'footer';
+
+@import './index/about';
+@import './index/products';
+@import './index/main-links';
+@import './index/brogues';
+@import './index/popular';
+@import './index/showcase';
+
+@import './contact/contact-main';
+
+p {
+    font-size: 20px;
+}

@@ -1,0 +1,13 @@
+.showcase {
+    background-color: $mauve;
+    min-height: 67vh;
+    padding: 5vw 10vw 6vw;
+    display: grid;
+    // grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 37px;
+}
+
+.showcase img {
+    width: 100%;
+}
