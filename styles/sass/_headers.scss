@@ -5,7 +5,7 @@ header {
 header .logo {
     @include fontVals(3.58rem, 3.6rem, 0.11rem);
     width: 100px;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
 }
 
 
@@ -72,11 +72,26 @@ header.contact h1 {
 header.blog {
     background-image: url(../assets/blog-header.jpg);
     background-position: right;
+    min-height: 63vh;
+}
+header.blog h1 {
+    margin: 10vh 0 0 32vw;
+    min-width: 400px;
+    font-size: clamp(5rem, 12vw, 8rem)
 }
 
 // CONTACT HEADER
 header.contact {
     background-image: url(../assets/contact-image.jpg);
     background-position: left;
-    min-height: 60vh;
+    min-height: 66vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // position: relative;
+}
+header.contact h1 {
+    margin: 10vh 0 0 23.5vw;
+    min-width: 400px;
+    font-size: clamp(5rem, 12vw, 8rem)
 }

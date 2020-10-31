@@ -3,6 +3,11 @@
 @import 'headers';
 @import 'footer';
 
+
+// styles shared by all pages that aren't index.html:
+@import './secondary-pages.scss';
+
+// index styles
 @import './index/about';
 @import './index/products';
 @import './index/main-links';
@@ -10,8 +15,8 @@
 @import './index/popular';
 @import './index/showcase';
 
+// contact page styles
 @import './contact/contact-main';
 
-p {
-    font-size: 20px;
-}
+// blog page styles
+@import './blog/blog-main';

@@ -296,7 +296,7 @@ header .logo {
   line-height: 3.6rem;
   letter-spacing: 0.11rem;
   width: 100px;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 
 header.index {
@@ -374,12 +374,25 @@ header.contact h1 {
 header.blog {
   background-image: url(../assets/blog-header.jpg);
   background-position: right;
+  min-height: 63vh;
+}
+
+header.blog h1 {
+  margin: 10vh 0 0 32vw;
+  min-width: 400px;
+  font-size: clamp(5rem, 12vw, 8rem);
 }
 
 header.contact {
   background-image: url(../assets/contact-image.jpg);
   background-position: left;
-  min-height: 60vh;
+  min-height: 66vh;
+}
+
+header.contact h1 {
+  margin: 10vh 0 0 23.5vw;
+  min-width: 400px;
+  font-size: clamp(5rem, 12vw, 8rem);
 }
 
 footer {
@@ -390,6 +403,13 @@ footer {
   line-height: 3.2rem;
   letter-spacing: 0;
   padding: 5px;
+}
+
+.contact-main,
+.blog-main {
+  background-color: #FAE5FF;
+  width: 100%;
+  position: relative;
 }
 
 .index-about {
@@ -418,8 +438,8 @@ footer {
 }
 
 .index-about figure img {
-  width: 100%;
   max-height: 107vh;
+  height: 100%;
 }
 
 .index-about h2 {
@@ -604,31 +624,79 @@ footer {
   width: 100%;
 }
 
-.contact-main {
-  background-color: #FAE5FF;
-}
-
-.contact-main figure {
+.content-container figure {
   margin: 0;
   float: right;
+  position: absolute;
+  top: -230px;
+  right: 6vw;
 }
 
-.contact-main article {
+.content-container article {
   float: left;
-  padding: 20px;
+  padding: 150px 0;
+  width: 24vw;
 }
 
-.contact-main article p {
+.content-container article p {
   line-height: 1rem;
+  font-size: 1.8rem;
 }
 
-.contact-main .emailaddress {
+.content-container .fab {
+  font-size: 2.5rem;
+  padding: 10px 20px 10px 0;
+}
+
+.content-container .emailaddress {
   text-transform: uppercase;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   line-height: 1rem;
   letter-spacing: 1.3px;
 }
 
-p {
-  font-size: 20px;
+.content-container form {
+  background-color: #FFFFFF;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 6fr 1fr;
+      grid-template-rows: 2fr 6fr 1fr;
+  -ms-grid-columns: (25.5vw)[2];
+      grid-template-columns: repeat(2, 25.5vw);
+  gap: 3vw 1vw;
+  padding: 4vw;
+  height: 70vh;
+}
+
+.content-container textarea {
+  grid-column: span 2;
+}
+
+.content-container button {
+  grid-column: span 2;
+}
+
+header.blog {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-main {
+  margin: 0;
+  padding: 0;
+}
+
+.main-blog-section {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.blog-header-image {
+  padding: 0;
+  margin: 0;
 }

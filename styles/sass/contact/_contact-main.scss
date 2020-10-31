@@ -1,21 +1,56 @@
-.contact-main {
-    background-color: $mauve;
-}
 
-.contact-main figure {
+
+// .contact header {
+    
+// }
+.content-container figure {
     margin: 0;
     float: right;
+    position: absolute;
+    top: -230px;
+    right: 6vw;
 }
 
-.contact-main article {
+.content-container article {
     float: left;
-    padding: 20px;
+    padding: 150px 0;
+    width: 24vw;
         p {
             line-height: 1rem;
+            font-size: 1.8rem;
         }
 }
 
-.contact-main .emailaddress {
+.content-container .fab {
+    font-size: 2.5rem;
+    padding: 10px 20px 10px 0;
+}
+.content-container .emailaddress {
     text-transform: uppercase;
-    @include fontVals(3.2rem, 1rem, 1.3px)
+    @include fontVals(2.2rem, 1rem, 1.3px)
+}
+
+.content-container form {
+    background-color: $white;
+    display: grid;
+    grid-template-rows: 2fr 6fr 1fr;
+    grid-template-columns: repeat(2, 25.5vw);
+    // border: 1px solid #000;
+    gap: 3vw 1vw;
+    padding: 4vw;
+    height: 70vh;
+}
+// .content-container figure::before{
+//     content: 'testing';
+//     background-color: yellow;
+//     display: block;
+//     width: 500px;
+//     height: 50px;
+// }
+
+.content-container textarea {
+    grid-column: span 2;
+}
+.content-container button {
+    grid-column: span 2;
 }
