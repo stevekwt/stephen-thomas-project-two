@@ -4,4 +4,9 @@ footer {
     text-align: center;
     @include fontVals(2rem, 3.2rem);
     padding: 5px;
+        a {
+            color: $white;
+            text-decoration: none;
+            border-bottom: 1px $white dotted;
+        }
 }

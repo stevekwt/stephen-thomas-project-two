@@ -323,7 +323,7 @@ header .logo {
 
 .top-bar nav ul li {
   display: inline-block;
-  padding: 2px 10px;
+  padding: 2px 0.7vw;
   margin: 9px;
   font-size: 2rem;
   line-height: 2.9rem;
@@ -337,12 +337,12 @@ header .logo {
   color: #0D0D0D;
 }
 
-nav ul li:hover {
+.top-bar nav ul li:hover {
   background-color: #0D0D0D;
   color: #FFFFFF;
 }
 
-nav ul li a:hover {
+.top-bar nav ul li a:hover {
   color: #FFFFFF;
 }
 
@@ -353,7 +353,7 @@ header.index {
   min-height: 620px;
 }
 
-header.index nav ul li:first-child {
+header.index .top-bar nav ul li:first-child {
   background-color: #0D0D0D;
   color: #FFFFFF;
 }
@@ -409,6 +409,12 @@ header.contact h1 {
   font-size: clamp(5rem, 12vw, 8rem);
 }
 
+@media (max-width: 770px) {
+  .top-bar nav {
+    display: none;
+  }
+}
+
 footer {
   background-color: #882C07;
   color: #FFFFFF;
@@ -417,6 +423,12 @@ footer {
   line-height: 3.2rem;
   letter-spacing: 0;
   padding: 5px;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: 1px #FFFFFF dotted;
 }
 
 form {
@@ -488,6 +500,119 @@ button {
       grid-template-columns: repeat(2, 25vw);
   padding: 4vw 4vw 3.5vw 4vw;
   gap: 3vw 1.5vw;
+}
+
+/*
+ * adapted from Erik Terwan
+ */
+.mobile-menu {
+  margin: 0;
+  padding: 0;
+  display: none;
+  /* make it look decent enough */
+}
+
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  background: #fae5ff;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: #FE6F19;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #0D0D0D;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  left: -166px;
+  width: 300px;
+  margin: -121px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #fae5ff;
+  list-style-type: none;
+  opacity: 0.5;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  text-align: right;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
+@media (max-width: 770px) {
+  .mobile-menu {
+    display: initial;
+  }
 }
 
 .index-about {

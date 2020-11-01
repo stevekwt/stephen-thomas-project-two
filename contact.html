@@ -11,6 +11,47 @@
 <body>
 
     <header class="contact">
+
+
+        <nav class="mobile-menu">
+            <div id="menuToggle">
+                <!--
+                    A hidden checkbox for click reciever
+                    -->
+                <input type="checkbox" checked="false" />
+                <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                <span></span>
+                <span></span>
+                <span></span>
+        
+                <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                <ul id="menu">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="index.html#about">
+                        <li>About</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+
+
         <div class="wrapper">
 
             <div class="top-bar">
@@ -65,7 +106,7 @@
     </main> 
 
     <footer>
-        Made at Juno College in 2020
+        Made at <a href="https://junocollege.com/">Juno College</a> in 2020
     </footer>
     
 </body>

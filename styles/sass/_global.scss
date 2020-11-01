@@ -1,4 +1,3 @@
-
 // plum purple #4C0341
 // orange #FE6F19
 // white #FFFFFF
@@ -19,6 +18,7 @@ $figBorWidth: 2.5vw;
 $firstMediaQuery: 1235px;
 $secondMediaQuery: 1100px;
 $thirdMediaQuery: 770px;
+$fourthMediaQuery: 400px;
 
 @mixin fontVals ($size, $height: 1, $spacing: 0) {
     font-size: $size;
