@@ -399,12 +399,12 @@ header.blog h1 {
 header.contact {
   background-image: url(../assets/contact-image.jpg);
   background-position: left;
-  height: 66vh;
-  min-height: 500px;
+  height: 36vw;
+  min-height: 556px;
 }
 
 header.contact h1 {
-  margin: 10vh 0 0 23.5vw;
+  margin: 10vh 0 0 24.5vw;
   min-width: 400px;
   font-size: clamp(5rem, 12vw, 8rem);
 }
@@ -482,16 +482,10 @@ button {
   color: #fae5ff;
 }
 
-.contact-main {
-  background-color: #fae5ff;
-  width: 100%;
-  position: relative;
-}
-
-.blog-main {
-  background-color: #fae5ff;
-  width: 100%;
-  position: relative;
+.contact-main form {
+  height: 577px;
+  -ms-grid-columns: (25.5vw)[2];
+      grid-template-columns: repeat(2, 25.5vw);
 }
 
 .index-about {
@@ -747,22 +741,28 @@ button {
   width: 100%;
 }
 
+.contact-main {
+  background-color: #fae5ff;
+  width: 100%;
+  position: relative;
+}
+
 .content-container figure {
   margin: 0;
   float: right;
   position: absolute;
-  top: -230px;
+  top: -258px;
   right: 6vw;
 }
 
 .content-container article {
   float: left;
-  padding: 150px 0;
+  padding: 150px 0 9vw;
   width: 24vw;
 }
 
 .content-container article p {
-  line-height: 1rem;
+  line-height: 1.8rem;
   font-size: 1.8rem;
 }
 
@@ -773,9 +773,15 @@ button {
 
 .content-container .emailaddress {
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1rem;
   letter-spacing: 1.3px;
+}
+
+.blog-main {
+  background-color: #fae5ff;
+  width: 100%;
+  position: relative;
 }
 
 .blog-main h2 {

@@ -91,11 +91,11 @@ header.blog h1 {
 header.contact {
     background-image: url(../assets/contact-image.jpg);
     background-position: left;
-    height: 66vh;
-    min-height: 500px;
+    height: 36vw;
+    min-height: 556px;
 }
 header.contact h1 {
-    margin: 10vh 0 0 23.5vw;
+    margin: 10vh 0 0 24.5vw;
     min-width: 400px;
     font-size: clamp(5rem, 12vw, 8rem)
 }

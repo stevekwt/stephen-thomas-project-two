@@ -1,3 +1,9 @@
+.blog-main {
+    background-color: $mauve;
+    width: 100%;
+    position: relative;
+}
+
 .blog-main h2 {
     @include fontVals(5.2rem, 100%, 1.2px)
 }
