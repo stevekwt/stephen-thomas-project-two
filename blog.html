@@ -28,16 +28,20 @@
         </div>
     </header>
     
-    <main class="blog-main">
+    <main class="blog-main clearfix">
 
-        <section class="main-blog-section clearfix wrapper">
+        <section class="main-blog-section clearfix">
 
             <!-- main-blog-post start  -->
             <div class="main-blog-post">
-            
-                <figure class="shadow--left">
-                    <div class="blog-header-image"><img src="" alt=""></div>
-                </figure>
+
+                <div class="main-blog-post-wrapper">
+                
+                <div class="figure-container">
+                    <figure class="blog-header-image shadow--left">
+                        <img src="./assets/blog-post-image.jpg" alt="">
+                    </figure>
+                </div>
             
                 <article>
                     <h2>Shoes Around The World</h2>
@@ -54,6 +58,8 @@
                         explicabo dicta voluptatibus voluptas!</p>
                 </article>
             
+
+                
                 <!-- comment section start  -->
                 <div class="comments">
                     <h2>Comments:</h2>
@@ -86,22 +92,28 @@
                 </div>
                 <!-- comment section end  -->
             
+                </div>
+                <!-- main-blog-post-wrapper end  -->
+
             </div>
             <!-- main-blog-post end  -->
 
             <!-- OTHER POSTS BEGIN  -->
             <div class="other-posts">
 
-                <div class="latest-post">
-                    <article>
-                        <div class="post-image"><img src="" alt=""></div>
-                        <h3>Any Weather</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum odit nisi culpa repudiandae debitis vel</p>
-                    </article>
-                </div>
+                <article class="latest-post">
+
+                    <div class="post-image">
+                        <img src="./assets/sidebar-image.jpg" alt="">
+                    </div>
+
+                    <h3>Any Weather</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum odit nisi culpa repudiandae debitis vel</p>
+
+                </article>
 
                 <div class="recent-posts">
-                    <article>
                         <h3>Recent Posts</h3>
                         <ul>
                             <li>Lorem, ipsum dolor sit</li>
@@ -109,7 +121,6 @@
                             <li>Amet consectetur adipisicing elit</li>
                             <li>Provident hic nam om</li>
                         </ul>
-                    </article>
                 </div>
 
             </div>
