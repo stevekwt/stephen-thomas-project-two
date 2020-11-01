@@ -311,7 +311,8 @@ header .logo {
 header.index {
   background-image: url(../assets/header-image.jpg);
   background-position: center;
-  min-height: 85vh;
+  height: 75vh;
+  min-height: 620px;
 }
 
 .top-bar {
@@ -510,15 +511,14 @@ button {
 .index-about figure {
   position: absolute;
   margin: 0;
-  bottom: -75px;
+  bottom: -85px;
   right: 0;
   width: 50vw;
   max-width: 710px;
 }
 
 .index-about figure img {
-  max-height: 107vh;
-  height: 100%;
+  width: 100%;
 }
 
 .index-about h2 {

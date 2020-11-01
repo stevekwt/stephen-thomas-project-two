@@ -8,11 +8,12 @@ header .logo {
     padding: 40px 0 0 0;
 }
 
-
+// INDEX HEADER
 header.index {
   background-image: url(../assets/header-image.jpg);
   background-position: center;
-  min-height: 85vh;
+  height: 75vh;
+  min-height: 620px;
 }
 .top-bar {
     display: flex;
