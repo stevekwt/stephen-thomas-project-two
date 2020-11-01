@@ -16,6 +16,7 @@ $mauve: rgb(250, 229, 255);
 $figBorWidth: 35px;
 
 $firstMediaQuery: 1235px;
+$secondMediaQuery: 1100px;
 
 @mixin fontVals ($size, $height: 1, $spacing: 0) {
     font-size: $size;
