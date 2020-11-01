@@ -308,13 +308,6 @@ header .logo {
   padding: 40px 0 0 0;
 }
 
-header.index {
-  background-image: url(../assets/header-image.jpg);
-  background-position: center;
-  height: 75vh;
-  min-height: 620px;
-}
-
 .top-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,6 +346,13 @@ nav ul li a:hover {
   color: #FFFFFF;
 }
 
+header.index {
+  background-image: url(../assets/header-image.jpg);
+  background-position: center;
+  height: 75vh;
+  min-height: 620px;
+}
+
 header.index nav ul li:first-child {
   background-color: #0D0D0D;
   color: #FFFFFF;
@@ -365,12 +365,14 @@ header.index h1 {
   width: 200px;
 }
 
-section.index-about {
-  padding-bottom: 12vw;
-}
-
 .centering {
   text-align: center;
+}
+
+@media (max-width: 1235px) {
+  header.index h1 {
+    color: #FFFFFF;
+  }
 }
 
 header.blog h1,
@@ -501,17 +503,19 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 12vw;
 }
 
 .splash-container {
-  height: 180px;
+  height: 14vw;
+  max-height: 180px;
   position: relative;
 }
 
 .index-about figure {
   position: absolute;
   margin: 0;
-  bottom: -85px;
+  bottom: -8vw;
   right: 0;
   width: 50vw;
   max-width: 710px;
@@ -527,6 +531,7 @@ button {
   letter-spacing: 1.2px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: calc(40px + 3vw);
 }
 
 .index-about p {

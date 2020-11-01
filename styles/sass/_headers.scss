@@ -7,14 +7,6 @@ header .logo {
     width: 100px;
     padding: 40px 0 0 0;
 }
-
-// INDEX HEADER
-header.index {
-  background-image: url(../assets/header-image.jpg);
-  background-position: center;
-  height: 75vh;
-  min-height: 620px;
-}
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -36,7 +28,6 @@ header.index {
         }
     }
 }
-
 nav ul li:hover {
     background-color: $black;
     color: $white; 
@@ -45,22 +36,36 @@ nav ul li a:hover {
     color: $white; 
 }
 
+
+// INDEX HEADER
+header.index {
+  background-image: url(../assets/header-image.jpg);
+  background-position: center;
+  height: 75vh;
+  min-height: 620px;
+}
 header.index nav ul li:first-child {
     background-color: $black;
     color: $white;
 }
-
 header.index h1 {
    @include fontVals(11rem, 6.4rem);
    width: 200px;
+//    font-size: clamp(5rem, 12vw, 11rem)
 }
-section.index-about {
-    padding-bottom: 12vw;
-}
+
 .centering {
     text-align: center;
 }
 
+
+@media (max-width: $firstMediaQuery) {
+    header.index h1 {
+        color: $white;
+    }
+}
+
+// END INDEX HEADER
 
 // HEADER STYLES SHARED BETWEEN CONTACT AND BLOG
 header.blog h1,
@@ -94,3 +99,4 @@ header.contact h1 {
     min-width: 400px;
     font-size: clamp(5rem, 12vw, 8rem)
 }
+

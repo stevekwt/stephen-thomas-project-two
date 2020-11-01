@@ -4,11 +4,12 @@
     background-color: $mauve;
     display: flex;
     flex-direction: column;
-    // border: 1px solid #000;
+    padding-bottom: 12vw;
 }
 
 .splash-container {
-    height: 180px;
+    height: 14vw;
+    max-height: 180px;
     position: relative;
 }
 
@@ -19,7 +20,8 @@
 .index-about figure {
     position: absolute;
     margin: 0;
-    bottom: -85px;
+    // bottom: -85px;
+    bottom: -8vw;
     right: 0;
     width: 50vw;
     max-width: 710px;
@@ -34,6 +36,7 @@
     @include fontVals(5.2rem, 100%, 1.2px);
     text-align: center;
     text-transform: uppercase;
+    margin-top: calc(40px + 3vw);
 }
 
 .index-about p {
@@ -43,4 +46,10 @@
 .index-about .button {
     margin: 0 auto;
 }
-// box-shadow: 10px 10px $orange;
+
+// @media (max-width: 1419px) {
+//     .splash-container {
+//         height: 13vw;
+//     }
+// }
+
