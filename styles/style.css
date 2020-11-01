@@ -484,8 +484,10 @@ button {
 
 .contact-main form {
   height: 577px;
-  -ms-grid-columns: (25.5vw)[2];
-      grid-template-columns: repeat(2, 25.5vw);
+  -ms-grid-columns: (25vw)[2];
+      grid-template-columns: repeat(2, 25vw);
+  padding: 4vw 4vw 3.5vw 4vw;
+  gap: 3vw 1.5vw;
 }
 
 .index-about {

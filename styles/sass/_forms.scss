@@ -62,5 +62,7 @@ button {
 .contact-main form {
     // height: 38vw;
     height: 577px;
-    grid-template-columns: repeat(2, 25.5vw);
+    grid-template-columns: repeat(2, 25vw);
+    padding: 4vw 4vw 3.5vw 4vw;
+    gap: 3vw 1.5vw;
 }
