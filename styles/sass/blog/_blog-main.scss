@@ -1,3 +1,17 @@
+.blog-main h2 {
+    @include fontVals(5.2rem, 100%, 1.2px)
+}
+.datestamp-and-user {
+    @include fontVals(2.0rem, 2.9rem, 1px);
+    font-weight: bold;
+    margin-top: 0;
+}
+.other-posts h2 {
+    @include fontVals(3.0rem, 100%, 1.3px);
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+
 .blog-main {
     height: 100%;
 }
@@ -11,10 +25,10 @@
     // right: 9.5vw;
     width: 62vw;
     background-color: $white;
-    padding: 50px;
 }
 .main-blog-post-wrapper {
     max-width: 700px;
+    padding: 50px 50px 20px 50px;
 }
 .main-blog-post figure {
     position: absolute;
@@ -41,24 +55,20 @@
 // OTHER POSTS SECTION (on desktop: left)
 .other-posts {
     float: left;
-    margin: 122px 50px 122px 10vw;
-    padding: 10px 0;
-    // width: 24vw;
-    width: 345px;
+    margin: 122px 3.42vw 122px 9vw;
+    padding: 10px 4.1vw 0 22px;
+    max-width: 350px;
+    width: 24vw;
     background-color: $white;
         p {
-            line-height: 1rem;
-            font-size: 1.8rem;
+            // font-size: 1.8rem;
         }
 }
 
-.lastest-post {
-
-}
-
 .post-image {
-    transform: translate(-121px, -27px);
-    width: 448px;
+    transform: translate(-152px, -28px);
+    max-width: 457px;
+    width: 32vw;
     // width: 31vw;
     // border: 1px solid #000;
     img {
@@ -66,4 +76,24 @@
         width: 100%;
         display: block;
     }
+}
+
+.comments {
+    padding: 34px 7px;
+}
+.comments h2 {
+    margin: 10px;
+    text-transform: uppercase;
+}
+.comment-container {
+    display: grid;
+    margin: 20px 36px 60px;
+    grid-template-columns: 92px auto;
+        img {
+            width: 100%;
+            padding: 5px;
+        }
+}
+.comment-header-and-text {
+    padding: 0 28px;
 }

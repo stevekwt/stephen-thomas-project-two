@@ -248,11 +248,11 @@ h1, h2, h3, h4, .logo {
   font-family: 'Pompiere', cursive;
 }
 
-p, nav, footer, .button, li, form {
+p, nav, footer, .button, li {
   font-family: 'Lato', sans-serif;
 }
 
-p, li, form {
+p, li {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 1px;
@@ -383,8 +383,7 @@ header.contact h1 {
 header.blog {
   background-image: url(../assets/blog-header.jpg);
   background-position: right;
-  height: 60vh;
-  min-height: 485px;
+  min-height: 60vh;
 }
 
 header.blog h1 {
@@ -396,8 +395,7 @@ header.blog h1 {
 header.contact {
   background-image: url(../assets/contact-image.jpg);
   background-position: left;
-  height: 66vh;
-  min-height: 500px;
+  min-height: 66vh;
 }
 
 header.contact h1 {
@@ -422,61 +420,49 @@ form {
   display: grid;
   -ms-grid-rows: 2fr 6fr 1fr;
       grid-template-rows: 2fr 6fr 1fr;
-  -ms-grid-columns: (23.5vw)[2];
-      grid-template-columns: repeat(2, 23.5vw);
-  gap: 3vw 4vw;
-  padding: 0 3vw 3vw 1vw;
-  height: 425px;
+  -ms-grid-columns: (25.5vw)[2];
+      grid-template-columns: repeat(2, 25.5vw);
+  gap: 3vw 1vw;
+  padding: 4vw;
+  height: 70vh;
 }
 
-form .name,
+form .name {
+  border: none;
+  border-bottom: 2px solid #FE6F19;
+  background-color: #fae5ff;
+}
+
 form .email {
   border: none;
   border-bottom: 2px solid #FE6F19;
-  padding: 17px 25px;
+  background-color: #fae5ff;
 }
 
-form .comment,
-form .message {
+form .comment {
   border: 2px solid #FE6F19;
-  padding: 24px 25px;
+  background-color: #fae5ff;
+  color: #fae5ff;
 }
 
 textarea {
   grid-column: span 2;
-  resize: none;
 }
 
 button {
   grid-column: span 2;
-  padding: 15px 0 10px;
-  text-transform: uppercase;
-  border: none;
 }
 
 .content-container form {
   background-color: #FFFFFF;
 }
 
-.content-container button {
-  background-color: #882C07;
-  color: #FFFFFF;
-}
-
 .comments form {
-  background-color: #fae5ff;
-  color: #4C0341;
-}
-
-.comments form .name,
-.comments form .email,
-.comments form .comment {
   background-color: #fae5ff;
 }
 
 .comments button {
   background-color: #4C0341;
-  color: #fae5ff;
 }
 
 .contact-main {
@@ -839,3 +825,4 @@ button {
 .comment-header-and-text {
   padding: 0 28px;
 }
+/*# sourceMappingURL=style.css.map */

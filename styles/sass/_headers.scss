@@ -72,7 +72,8 @@ header.contact h1 {
 header.blog {
     background-image: url(../assets/blog-header.jpg);
     background-position: right;
-    min-height: 60vh;
+    height: 60vh;
+    min-height: 485px;
 }
 header.blog h1 {
     margin: 10vh 0 0 32vw;
@@ -84,11 +85,8 @@ header.blog h1 {
 header.contact {
     background-image: url(../assets/contact-image.jpg);
     background-position: left;
-    min-height: 66vh;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // position: relative;
+    height: 66vh;
+    min-height: 500px;
 }
 header.contact h1 {
     margin: 10vh 0 0 23.5vw;

@@ -11,7 +11,7 @@ $orange: #FE6F19;
 $white: #FFFFFF;
 $black: #0D0D0D;
 $brownred: #882C07;
-$mauve: #FAE5FF;
+$mauve: rgb(250, 229, 255);
 
 $figBorWidth: 35px;
 
@@ -33,11 +33,11 @@ h1, h2, h3, h4, .logo {
     font-family: 'Pompiere', cursive;
 }
 
-p, nav, footer, .button {
+p, nav, footer, .button, li, form {
     font-family: 'Lato', sans-serif;
 }
 
-p {
+p, li, form {
     @include fontVals(2rem, 3.2rem, 1px)
 }
 
@@ -69,3 +69,7 @@ p {
     box-shadow: -$figBorWidth $figBorWidth $orange;
 }
 
+
+.comments {
+    background-color: $mauve;
+}

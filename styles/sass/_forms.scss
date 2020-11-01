@@ -1,0 +1,60 @@
+
+// FOR BOTH FORMS
+form {
+    background-color: $white;
+    display: grid;
+    grid-template-rows: 2fr 6fr 1fr;
+    grid-template-columns: repeat(2, 23.5vw);
+    // border: 1px solid #000;
+    gap: 3vw 4vw;
+    padding: 0 3vw 3vw 1vw;
+    height: 425px;
+}
+form .name,
+form .email {
+    border: none;
+    border-bottom: 2px solid $orange;
+    padding: 17px 25px;
+}
+form .comment,
+form .message {
+    border: 2px solid $orange; 
+    padding: 24px 25px;
+}
+textarea {
+    grid-column: span 2;
+    resize: none;
+}
+button {
+    grid-column: span 2;
+    padding: 15px 0 10px;
+    text-transform: uppercase;
+    border: none;
+}
+
+// FOR CONTACT FORM
+.content-container form {
+    background-color: $white;
+}
+.content-container button {
+    background-color: $brownred;
+    color: $white;
+}
+
+
+// FOR BLOG FORM
+.comments form {
+    background-color: $mauve;
+    color: $plum;
+}
+.comments form .name,
+.comments form .email,
+.comments form .comment {
+    background-color: $mauve;
+}
+
+.comments button {
+    background-color: $plum;
+    color: $mauve;
+}
+

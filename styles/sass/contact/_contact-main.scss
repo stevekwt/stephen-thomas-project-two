@@ -25,28 +25,3 @@
     text-transform: uppercase;
     @include fontVals(2.2rem, 1rem, 1.3px)
 }
-
-.content-container form {
-    background-color: $white;
-    display: grid;
-    grid-template-rows: 2fr 6fr 1fr;
-    grid-template-columns: repeat(2, 25.5vw);
-    // border: 1px solid #000;
-    gap: 3vw 1vw;
-    padding: 4vw;
-    height: 70vh;
-}
-// .content-container figure::before{
-//     content: 'testing';
-//     background-color: yellow;
-//     display: block;
-//     width: 500px;
-//     height: 50px;
-// }
-
-.content-container textarea {
-    grid-column: span 2;
-}
-.content-container button {
-    grid-column: span 2;
-}
