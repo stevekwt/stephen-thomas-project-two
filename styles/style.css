@@ -253,7 +253,7 @@ p, nav, footer, .button, li, form {
 }
 
 p, li, form {
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 3.2rem;
   letter-spacing: 1px;
 }
@@ -709,12 +709,13 @@ button {
 }
 
 .popular article {
-  padding: 0 50px;
+  padding: 0 3.5vw;
 }
 
 .popular img {
   display: block;
   width: 19vw;
+  min-width: 200px;
 }
 
 .popular h2 {
@@ -723,11 +724,16 @@ button {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   font-size: clamp(4rem, 4vw, 5.2rem);
+  margin-bottom: 0;
+}
+
+.popular .button {
+  background-color: #882C07;
 }
 
 .showcase {
   background-color: #fae5ff;
-  min-height: 67vh;
+  height: 36vw;
   padding: 5vw 10vw 6vw;
   display: -ms-grid;
   display: grid;
@@ -831,27 +837,6 @@ button {
   position: relative;
 }
 
-.other-posts {
-  float: left;
-  margin: 122px 3.42vw 122px 9vw;
-  padding: 10px 4.1vw 0 22px;
-  max-width: 350px;
-  width: 24vw;
-  background-color: #FFFFFF;
-}
-
-.post-image {
-  -webkit-transform: translate(-152px, -28px);
-          transform: translate(-152px, -28px);
-  max-width: 457px;
-  width: 32vw;
-}
-
-.post-image img {
-  width: 100%;
-  display: block;
-}
-
 .comments {
   padding: 34px 7px;
 }
@@ -876,4 +861,37 @@ button {
 
 .comment-header-and-text {
   padding: 0 28px;
+}
+
+.comment-header-and-text p {
+  margin: 0 0 6px 0;
+}
+
+.other-posts {
+  float: left;
+  margin: 122px 3.42vw 122px 9vw;
+  padding: 10px 4.1vw 0 22px;
+  max-width: 350px;
+  width: 24vw;
+  background-color: #FFFFFF;
+}
+
+.post-image {
+  -webkit-transform: translate(-152px, -28px);
+          transform: translate(-152px, -28px);
+  max-width: 457px;
+  width: 32vw;
+}
+
+.post-image img {
+  width: 100%;
+  display: block;
+}
+
+.recent-posts ul {
+  padding: 0 19px 19px 19px;
+}
+
+.recent-posts h2 {
+  margin-top: 50px;
 }

@@ -43,7 +43,7 @@ p, nav, footer, .button, li, form {
 }
 
 p, li, form {
-    @include fontVals(2rem, 3.2rem, 1px)
+    @include fontVals(1.7rem, 3.2rem, 1px)
 }
 
 .button {

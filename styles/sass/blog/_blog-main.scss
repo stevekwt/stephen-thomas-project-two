@@ -16,6 +16,7 @@
     height: 100%;
 }
 
+////////////////////////////////////////////////////
 // MAIN BLOG POST SECTION (on desktop: right)
 .main-blog-post {
     margin: 0;
@@ -52,32 +53,7 @@
     position: relative;
 }
 
-// OTHER POSTS SECTION (on desktop: left)
-.other-posts {
-    float: left;
-    margin: 122px 3.42vw 122px 9vw;
-    padding: 10px 4.1vw 0 22px;
-    max-width: 350px;
-    width: 24vw;
-    background-color: $white;
-        p {
-            // font-size: 1.8rem;
-        }
-}
-
-.post-image {
-    transform: translate(-152px, -28px);
-    max-width: 457px;
-    width: 32vw;
-    // width: 31vw;
-    // border: 1px solid #000;
-    img {
-        // opacity: 0.4;
-        width: 100%;
-        display: block;
-    }
-}
-
+// COMMENT SECTION 
 .comments {
     padding: 34px 7px;
 }
@@ -96,4 +72,39 @@
 }
 .comment-header-and-text {
     padding: 0 28px;
+}
+.comment-header-and-text p {
+    margin: 0 0 6px 0;
+}
+
+////////////////////////////////////////////////////
+// OTHER POSTS SECTION (on desktop: left)
+.other-posts {
+    float: left;
+    margin: 122px 3.42vw 122px 9vw;
+    padding: 10px 4.1vw 0 22px;
+    max-width: 350px;
+    width: 24vw;
+    background-color: $white;
+        p {
+            // font-size: 1.8rem;
+        }
+}
+.post-image {
+    transform: translate(-152px, -28px);
+    max-width: 457px;
+    width: 32vw;
+    // width: 31vw;
+    // border: 1px solid #000;
+    img {
+        // opacity: 0.4;
+        width: 100%;
+        display: block;
+    }
+}
+.recent-posts ul {
+    padding: 0 19px 19px 19px;
+}
+.recent-posts h2 {
+    margin-top: 50px;
 }
