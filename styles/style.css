@@ -282,13 +282,13 @@ p, li, form {
 }
 
 .shadow--right {
-  -webkit-box-shadow: 35px 35px #FE6F19;
-          box-shadow: 35px 35px #FE6F19;
+  -webkit-box-shadow: 2.5vw 2.5vw #FE6F19;
+          box-shadow: 2.5vw 2.5vw #FE6F19;
 }
 
 .shadow--left {
-  -webkit-box-shadow: -35px 35px #FE6F19;
-          box-shadow: -35px 35px #FE6F19;
+  -webkit-box-shadow: -2.5vw 2.5vw #FE6F19;
+          box-shadow: -2.5vw 2.5vw #FE6F19;
 }
 
 .comments {
@@ -632,7 +632,7 @@ button {
 
 .main-links {
   background-color: #fae5ff;
-  padding: 130px 11vw 2vw;
+  padding: 130px 8vw 2vw 7vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[2];
@@ -658,6 +658,7 @@ button {
   letter-spacing: 1.6px;
   text-transform: uppercase;
   margin: 0;
+  font-size: clamp(3rem, 4vw, 5.2rem);
 }
 
 .main-links .fas {
@@ -691,7 +692,8 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 67vh;
+  height: 32vw;
+  max-height: 449px;
 }
 
 .popular {
@@ -702,7 +704,7 @@ button {
 }
 
 .popular figure {
-  margin-right: 50px;
+  margin: 0 5vw 0 40px;
   height: 100%;
 }
 
@@ -712,13 +714,15 @@ button {
 
 .popular img {
   display: block;
-  height: 100%;
+  width: 19vw;
 }
 
 .popular h2 {
   font-size: 5.2rem;
   line-height: 100%;
   letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: clamp(4rem, 4vw, 5.2rem);
 }
 
 .showcase {

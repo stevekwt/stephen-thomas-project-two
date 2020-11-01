@@ -4,7 +4,7 @@
 }
 
 .popular figure {
-    margin-right: 50px;
+    margin: 0 5vw 0 40px;
     height: 100%;
 }
 
@@ -12,11 +12,12 @@
     padding: 0 50px;
 }
 .popular img {
-    // line-height: 0.01;
     display: block;
-    height: 100%;
+    width: 19vw;
 }
 
 .popular h2 {
-    @include fontVals(5.2rem, 100%, 1.2px)
+    @include fontVals(5.2rem, 100%, 1.2px);
+    text-transform: uppercase;
+    font-size: clamp(4rem, 4vw, 5.2rem);
 }

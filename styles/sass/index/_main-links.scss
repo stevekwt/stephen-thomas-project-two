@@ -1,6 +1,6 @@
 .main-links {
     background-color: $mauve;
-    padding: 130px 11vw 2vw;
+    padding: 130px 8vw 2vw 7vw;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -19,6 +19,7 @@
     @include fontVals(5.2rem, 100%, 1.6px);
     text-transform: uppercase;
     margin: 0;
+    font-size: clamp(3rem, 4vw, 5.2rem);
 }
 
 .main-links .fas {

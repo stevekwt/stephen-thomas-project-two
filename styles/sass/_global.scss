@@ -13,10 +13,12 @@ $black: #0D0D0D;
 $brownred: #882C07;
 $mauve: rgb(250, 229, 255);
 
-$figBorWidth: 35px;
+// $figBorWidth: 35px;
+$figBorWidth: 2.5vw;
 
 $firstMediaQuery: 1235px;
 $secondMediaQuery: 1100px;
+$thirdMediaQuery: 770px;
 
 @mixin fontVals ($size, $height: 1, $spacing: 0) {
     font-size: $size;
