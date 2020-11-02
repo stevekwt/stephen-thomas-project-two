@@ -29,3 +29,23 @@
     text-transform: uppercase;
     @include fontVals(2rem, 1rem, 1.3px)
 }
+
+@media (max-width: $thirdMediaQuery) {
+    .content-container figure,
+    .content-container article {
+        float: none;
+    }
+    .content-container figure {
+        position: static;
+        transform: translate(0, -34vw);
+    }
+    .content-container article {
+        padding: 0 0 1vw;
+        width: 90vw;
+        text-align: center;
+        margin-top: -22vw;
+    }
+    .contact-main form {
+        grid-template-columns: repeat(2, 40vw);
+    }
+}

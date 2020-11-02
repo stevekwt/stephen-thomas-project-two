@@ -976,6 +976,28 @@ button {
   letter-spacing: 1.3px;
 }
 
+@media (max-width: 770px) {
+  .content-container figure,
+  .content-container article {
+    float: none;
+  }
+  .content-container figure {
+    position: static;
+    -webkit-transform: translate(0, -34vw);
+            transform: translate(0, -34vw);
+  }
+  .content-container article {
+    padding: 0 0 1vw;
+    width: 90vw;
+    text-align: center;
+    margin-top: -22vw;
+  }
+  .contact-main form {
+    -ms-grid-columns: (40vw)[2];
+        grid-template-columns: repeat(2, 40vw);
+  }
+}
+
 .blog-main {
   background-color: #fae5ff;
   width: 100%;
