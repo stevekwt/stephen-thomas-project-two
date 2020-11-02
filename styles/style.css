@@ -902,6 +902,23 @@ button {
   background-color: #882C07;
 }
 
+@media (max-width: 770px) {
+  .popular {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .popular figure {
+    width: 71%;
+    margin: 0 auto 2vw;
+  }
+  .popular img {
+    width: 100%;
+  }
+}
+
 .showcase {
   background-color: #fae5ff;
   height: 36vw;
@@ -916,6 +933,16 @@ button {
 
 .showcase img {
   width: 100%;
+}
+
+@media (max-width: 770px) {
+  .showcase {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contact-main {

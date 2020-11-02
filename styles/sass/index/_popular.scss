@@ -27,3 +27,17 @@
 .popular .button {
     background-color: $brownred;
 }
+
+@media (max-width: $thirdMediaQuery) {
+    .popular {
+        flex-direction: column;
+        text-align: center;
+    }
+    .popular figure {
+        width: 71%;
+        margin: 0 auto 2vw;
+    }
+    .popular img {
+        width: 100%;
+    }
+}

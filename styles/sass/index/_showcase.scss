@@ -10,3 +10,10 @@
 .showcase img {
     width: 100%;
 }
+
+@media (max-width: $thirdMediaQuery) {
+    .showcase {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
