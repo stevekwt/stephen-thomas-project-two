@@ -508,8 +508,7 @@ button {
 .mobile-menu {
   margin: 0;
   padding: 0;
-  display: none;
-  /* make it look decent enough */
+  visibility: hidden;
 }
 
 #menuToggle {
@@ -584,7 +583,6 @@ button {
   padding-top: 125px;
   background: #fae5ff;
   list-style-type: none;
-  opacity: 0.5;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
   -webkit-transform: translate(100%, 0);
@@ -611,7 +609,7 @@ button {
 
 @media (max-width: 770px) {
   .mobile-menu {
-    display: initial;
+    visibility: visible;
   }
 }
 

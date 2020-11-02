@@ -5,10 +5,7 @@
 .mobile-menu {
     margin: 0;
     padding: 0;
-    display: none;
-    /* make it look decent enough */
-    // background: $black;
-    // color: $plum;
+    visibility: hidden;
 }
 
 #menuToggle
@@ -129,7 +126,7 @@
   background: $mauve;
   list-style-type: none;
   
-  opacity: 0.5;
+//   opacity: 0.5;
   
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
@@ -154,6 +151,6 @@
 
 @media (max-width: $thirdMediaQuery) {
     .mobile-menu {
-        display: initial;
+        visibility: visible;
     }
 }
