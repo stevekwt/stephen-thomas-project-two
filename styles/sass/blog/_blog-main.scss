@@ -114,3 +114,30 @@
 .recent-posts h2 {
     margin-top: 50px;
 }
+
+@media (max-width: $thirdMediaQuery) {
+    .main-blog-post,
+    .other-posts {
+        float: none;
+    }
+    .main-blog-post {
+        width: 99vw;
+            figure {
+                width: 70vw;
+            }
+    }
+    .comments form {
+        grid-template-columns: repeat(2, 42.5vw);
+        padding: 0 3vw 3vw 5vw;
+    }
+    .other-posts {
+        max-width: 100%;
+        width: 83vw;
+        margin-top: 0;
+        margin-bottom: -10px;
+    }
+    .post-image {
+        transform: none;
+        width: 71vw;
+    }
+}

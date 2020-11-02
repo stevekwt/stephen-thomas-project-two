@@ -1099,3 +1099,32 @@ button {
 .recent-posts h2 {
   margin-top: 50px;
 }
+
+@media (max-width: 770px) {
+  .main-blog-post,
+  .other-posts {
+    float: none;
+  }
+  .main-blog-post {
+    width: 99vw;
+  }
+  .main-blog-post figure {
+    width: 70vw;
+  }
+  .comments form {
+    -ms-grid-columns: (42.5vw)[2];
+        grid-template-columns: repeat(2, 42.5vw);
+    padding: 0 3vw 3vw 5vw;
+  }
+  .other-posts {
+    max-width: 100%;
+    width: 83vw;
+    margin-top: 0;
+    margin-bottom: -10px;
+  }
+  .post-image {
+    -webkit-transform: none;
+            transform: none;
+    width: 71vw;
+  }
+}
