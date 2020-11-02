@@ -13,14 +13,18 @@ header .logo {
 }
 .top-bar nav {
     ul {
+    background: $mauve;
     list-style: none;
+    padding: 0;
+    margin-top: 2vw;
         li {
         display: inline-block;
-        padding: 2px 0.7vw;
-        margin: 9px;
+        padding: 2px 1.5vw;
+        margin: 0;
         @include fontVals(2rem, 2.9rem, 0.1rem);
         text-transform: uppercase;
         color: $black;
+        
             a {
             text-decoration: none;
             color: $black;
@@ -44,26 +48,17 @@ header.index {
   height: 75vh;
   min-height: 620px;
 }
-// .top-bar nav ul li:first-child {
-header.index .top-bar nav ul li:first-child {
-    background-color: $black;
-    color: $white;
+
 }
 header.index h1 {
    @include fontVals(11rem, 6.4rem);
    width: 200px;
-//    font-size: clamp(5rem, 12vw, 11rem)
+   text-shadow: 3px 5px 0px $white, -2px -2px 0px $white;
+   font-size: clamp(10rem, 10vw, 11rem);
 }
 
 .centering {
     text-align: center;
-}
-
-
-@media (max-width: $firstMediaQuery) {
-    header.index h1 {
-        color: $white;
-    }
 }
 
 // END INDEX HEADER

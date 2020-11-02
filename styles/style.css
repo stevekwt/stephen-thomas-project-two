@@ -318,13 +318,16 @@ header .logo {
 }
 
 .top-bar nav ul {
+  background: #fae5ff;
   list-style: none;
+  padding: 0;
+  margin-top: 2vw;
 }
 
 .top-bar nav ul li {
   display: inline-block;
-  padding: 2px 0.7vw;
-  margin: 9px;
+  padding: 2px 1.5vw;
+  margin: 0;
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 0.1rem;
@@ -363,16 +366,12 @@ header.index h1 {
   line-height: 6.4rem;
   letter-spacing: 0;
   width: 200px;
+  text-shadow: 3px 5px 0px #FFFFFF, -2px -2px 0px #FFFFFF;
+  font-size: clamp(10rem, 10vw, 11rem);
 }
 
 .centering {
   text-align: center;
-}
-
-@media (max-width: 1235px) {
-  header.index h1 {
-    color: #FFFFFF;
-  }
 }
 
 header.blog h1,
@@ -547,11 +546,10 @@ button {
   /* hide this */
   z-index: 2;
   /* and place it over the hamburger */
-  -webkit-touch-callout: none;
 }
 
 /*
- * Just a quick hamburger
+ * hamburger
  */
 #menuToggle span {
   display: block;
@@ -572,7 +570,7 @@ button {
 
 /*
  * Make this absolute positioned
- * at the top left of the screen
+ * at the top right of the screen
  */
 #menu {
   position: absolute;
@@ -600,7 +598,7 @@ button {
 }
 
 /*
- * And let's slide it in from the left
+ * slide it in from the right
  */
 #menuToggle input:checked ~ ul {
   -webkit-transform: none;
