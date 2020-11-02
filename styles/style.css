@@ -921,28 +921,22 @@ button {
 
 .showcase {
   background-color: #fae5ff;
-  height: 36vw;
   padding: 5vw 10vw 6vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 37px;
-          column-gap: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .showcase img {
-  width: 100%;
-}
-
-@media (max-width: 770px) {
-  .showcase {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  max-width: 100%;
+  min-width: 300px;
+  width: 30%;
+  margin: 1.2vw;
 }
 
 .contact-main {

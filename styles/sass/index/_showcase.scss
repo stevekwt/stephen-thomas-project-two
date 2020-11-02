@@ -1,19 +1,14 @@
 .showcase {
     background-color: $mauve;
-    height: 36vw;
     padding: 5vw 10vw 6vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .showcase img {
-    width: 100%;
-}
-
-@media (max-width: $thirdMediaQuery) {
-    .showcase {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
+    max-width: 100%;
+    min-width: 300px;
+    width: 30%;
+        margin: 1.2vw;
 }
