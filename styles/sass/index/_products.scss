@@ -1,14 +1,12 @@
+.products h2 {
+    @include fontVals(4.2rem, 100%, 1.3px);
+    text-transform: uppercase;
+}
+
 .top-box,
 .bottom-box {
     position: relative;
     min-height: 375px;
-}
-
-.top-box {
-    // border: 3px solid green;
-}
-.bottom-box {
-    // border: 3px solid blue;
 }
 
 .top-box .image-container {
@@ -38,11 +36,8 @@
     height: 100%;
 }
 
-.products h2 {
-    @include fontVals(4.2rem, 100%, 1.3px);
-    text-transform: uppercase;
-}
 
+// image styling START
 .image-container {
     width: 100%;
     // border: 1px solid #000;
@@ -79,6 +74,8 @@
             }
     // border: 2px solid red;
 }
+// image styling END
+
 
 @media (max-width: $firstMediaQuery) {
     .top-box .right-article {
@@ -86,5 +83,33 @@
     }
     .bottom-box .left-article {
         padding-top: 0;
+    }
+}
+
+@media (max-width: $thirdMediaQuery) {
+    .top-box .image-container {
+        float: none;
+    }
+    .products .shadow--right,
+    .products .shadow--left {
+        height: 44.25vw;
+        width: 71vw;
+        position: static;
+        margin: 0 auto;
+    }
+    .top-box,
+    .bottom-box {
+        position: static;
+    }
+    .bottom-box .left-article,
+    .top-box .right-article {
+        float: none;
+        margin: 0 auto;
+        width: 67%;
+        padding: 2vw 0;
+        text-align: center;
+    }
+    .bottom-box .left-article {
+        padding: 7vw 0 2vw;
     }
 }

@@ -661,6 +661,13 @@ button {
   margin: 0 auto;
 }
 
+.products h2 {
+  font-size: 4.2rem;
+  line-height: 100%;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
 .top-box,
 .bottom-box {
   position: relative;
@@ -694,13 +701,6 @@ button {
 
 .bottom-box figure {
   height: 100%;
-}
-
-.products h2 {
-  font-size: 4.2rem;
-  line-height: 100%;
-  letter-spacing: 1.3px;
-  text-transform: uppercase;
 }
 
 .image-container {
@@ -749,6 +749,34 @@ button {
   }
 }
 
+@media (max-width: 770px) {
+  .top-box .image-container {
+    float: none;
+  }
+  .products .shadow--right,
+  .products .shadow--left {
+    height: 44.25vw;
+    width: 71vw;
+    position: static;
+    margin: 0 auto;
+  }
+  .top-box,
+  .bottom-box {
+    position: static;
+  }
+  .bottom-box .left-article,
+  .top-box .right-article {
+    float: none;
+    margin: 0 auto;
+    width: 67%;
+    padding: 2vw 0;
+    text-align: center;
+  }
+  .bottom-box .left-article {
+    padding: 7vw 0 2vw;
+  }
+}
+
 .main-links {
   background-color: #fae5ff;
   padding: 130px 8vw 2vw 7vw;
@@ -758,7 +786,7 @@ button {
       grid-template-rows: repeat(2, 1fr);
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  row-gap: 35px;
+  row-gap: 3vw;
 }
 
 .main-links article {
@@ -804,6 +832,30 @@ button {
 
 .main-links .fa-phone {
   padding: 10px 11px;
+}
+
+@media (max-width: 770px) {
+  .main-links {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 7vw 3vw 2vw 3vw;
+  }
+  .main-links .logo {
+    padding: 20px 20px 20px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-links article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .main-links .logo {
+    padding-right: 0;
+  }
 }
 
 .brogues {
