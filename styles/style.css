@@ -239,6 +239,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -354,11 +358,6 @@ header.index {
   background-position: center;
   height: 75vh;
   min-height: 620px;
-}
-
-header.index .top-bar nav ul li:first-child {
-  background-color: #0D0D0D;
-  color: #FFFFFF;
 }
 
 header.index h1 {
@@ -513,6 +512,7 @@ button {
 #menuToggle {
   display: block;
   position: absolute;
+  position: fixed;
   top: 50px;
   right: 50px;
   z-index: 1;
