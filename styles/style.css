@@ -310,6 +310,7 @@ header .logo {
   letter-spacing: 0.11rem;
   width: 100px;
   padding: 40px 0 0 0;
+  text-shadow: 2px 1px 0px #FFFFFF, -2px -2px 1px #FFFFFF, 2px 2px 2px #FFFFFF;
 }
 
 .top-bar {
@@ -514,12 +515,15 @@ button {
   position: absolute;
   position: fixed;
   top: 50px;
-  right: 50px;
+  right: 30px;
   z-index: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-color: #FFFFFF;
+  padding: 15px 10px 10px;
+  border-radius: 45px;
 }
 
 #menuToggle a {
